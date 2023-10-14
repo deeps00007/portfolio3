@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../about,contact/about_style.css" />
+    <!-- <link rel="stylesheet" href="/download cv.css" />/ -->
+</head>
+
+<body>
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- <img src="/profile-pic.png"  /> -->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About<span>Me</span></h1>
+                    <a>
+                        Aspiring Java Developer with a strong foundation in Data
+                        Structures and Algorithms. Currently working on dynamic
+                        web projects using HTML, CSS, and JavaScript. Eager to
+                        combine web development skills with programming
+                        expertise to create innovative and user-friendly web
+                        applications.
+                    </a>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br />Desinging Web/App Interfaces</li>
+                            <li><span>Web Development</span><br />Web App Development</li>
+                            <li>
+                                <span>App Development</span><br />Building Android/ios Apps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exeperince">
+                        <ul>
+                            <li>
+                                <span>I dont have any working experience</span>
+                                <span>I dont have any working experience</span>
+                                <span>I dont have any working experience</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>Current status</span><br />In 2nd year of BCA course
+                            </li>
+                            <li>
+                                <span>2021-2023</span><br />Pursuring BCA course form<a
+                                    href="https://goo.gl/maps/WXPPSXHiKPgN7mTe9" target="_blank">
+                                    Hierank Business School Noida</a>
+                            </li>
+                            <li>
+                                <span>2020</span><br />I got 70 percent in class 12 form<a
+                                    href="https://www.cbse.gov.in/" target="_blank">
+                                    CBSE Board</a>
+                                form<a href="https://goo.gl/maps/fuF9EVThFiZFt9yQ6" target="_blank">
+                                    Mordern School Noida.</a>
+                            </li>
+                            <li>
+                                <span>2017</span><br />I got 7 CGPA in class 10th form<a
+                                    href="https://goo.gl/maps/fuF9EVThFiZFt9yQ6" target="_blank">
+                                    Mordern School Noida.</a>
+                                form<a href="https://www.cbse.gov.in/" target="_blank">
+                                    CBSE Board.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+</html>
