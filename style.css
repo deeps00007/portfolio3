@@ -10,7 +10,7 @@ body {
 #header {
   height: 100vh;
   width: 100%;
-  background-image: url("../photos/My\ croped.png");
+  background-image: url("./photos/My\ croped.png");
   background-size: cover;
   background-position: center;
 }
