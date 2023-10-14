@@ -13,7 +13,7 @@ span{
 	font-size:medium;
 }
 body {
-    background-image: url("./photos/gray\ background.jpg");
+    background-image: url("../photos/gray\ background.jpg");
     height: 100vh;
     width: 100%;
     background-size:cover;
